@@ -18,7 +18,7 @@
         android:singleLine="true"
         android:ellipsize="marquee"
         android:textSize="17sp"
-        android:text="Please Fork me on github(www.github.com/wailaixing) ^-^"
+        android:text="Please Fork me on github(https://github.com/wailaixing/Android-Mobile-Security) ^-^"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
     

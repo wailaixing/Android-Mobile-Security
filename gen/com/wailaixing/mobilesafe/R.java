@@ -25,13 +25,14 @@ public final class R {
         public static final int atools=0x7f020001;
         public static final int callmsgsafe=0x7f020002;
         public static final int ic_launcher=0x7f020003;
-        public static final int luncher_bg=0x7f020004;
-        public static final int netmanager=0x7f020005;
-        public static final int safe=0x7f020006;
-        public static final int settings=0x7f020007;
-        public static final int sysoptimize=0x7f020008;
-        public static final int taskmanager=0x7f020009;
-        public static final int trojan=0x7f02000a;
+        public static final int lunch_bg1=0x7f020004;
+        public static final int luncher_bg=0x7f020005;
+        public static final int netmanager=0x7f020006;
+        public static final int safe=0x7f020007;
+        public static final int settings=0x7f020008;
+        public static final int sysoptimize=0x7f020009;
+        public static final int taskmanager=0x7f02000a;
+        public static final int trojan=0x7f02000b;
     }
     public static final class id {
         public static final int action_settings=0x7f08000b;

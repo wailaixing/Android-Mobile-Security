@@ -26,6 +26,7 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -35,6 +36,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -54,16 +56,36 @@ public class SplashActivity extends Activity {
 	private String description;//
 	private String apkurl;//
 	private TextView tv_update_info;
+	private SharedPreferences sp;
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
+
+		sp=getSharedPreferences("config", MODE_PRIVATE);
+		
 		tv_splash_version=(TextView) findViewById(R.id.tv_splash_version);
 		tv_splash_version.setText("版本号"+getVersionName());
 		tv_update_info=(TextView)findViewById(R.id.tv_update_info);
-		//检查升级
-		checkUpdate(); 
+		//得到是否升级
+		boolean update=sp.getBoolean("update", false);
+		if(update){
+			//检查升级
+			checkUpdate(); 			
+		}else{
+			//自动升级已经关闭
+			handler.postDelayed(new Runnable() {
+				
+				@Override
+				public void run() {
+					// TODO Auto-generated method stub
+					enterhome();
+				}
+			},2000);
+
+		}
 		
 		AlphaAnimation aa=new AlphaAnimation(0.2f,1.0f);
 		aa.setDuration(500);
@@ -145,6 +167,7 @@ public class SplashActivity extends Activity {
 									public void onLoading(long count, long current) {
 										// TODO Auto-generated method stub
 										super.onLoading(count, current);
+										tv_update_info.setVisibility(View.VISIBLE);
 										//当前下载的百分比
 										int progress=(int)(current * 100 / count);
 										tv_update_info.setText("下载进度:"+progress+"%");
