@@ -16,6 +16,9 @@ public class SettingItemView extends RelativeLayout {
 	private TextView tv_desc;
 	private CheckBox cb_status;
 	private TextView tv_title;
+	private String title;
+	private String desc_on;
+	private String desc_off;
 	//初始化布局文件
 	private void iniView(Context context) {
 		// TODO Auto-generated method stub
@@ -32,9 +35,14 @@ public class SettingItemView extends RelativeLayout {
 		iniView(context);
 	}
 
+	//带有两个参数的构造方法,
 	public SettingItemView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		iniView(context);
+		title = attrs.getAttributeValue("http://schemas.android.com/apk/res/com.wailaixing.mobilesafe","title");
+		desc_on = attrs.getAttributeValue("http://schemas.android.com/apk/res/com.wailaixing.mobilesafe","desc_on");
+		desc_off = attrs.getAttributeValue("http://schemas.android.com/apk/res/com.wailaixing.mobilesafe","desc_off");
+		tv_title.setText(title);
 	}
 
 	public SettingItemView(Context context) {
@@ -49,6 +57,12 @@ public class SettingItemView extends RelativeLayout {
 	
 	//设置组合控件状态
 	public void setChecked(boolean checked){
+		if(checked){
+			setDesc(desc_on);
+		}else{
+			setDesc(desc_off);
+		}
+		
 		cb_status.setChecked(checked);
 	}
 	
