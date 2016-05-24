@@ -54,30 +54,39 @@ containing a value of this type.
         public static final int netmanager=0x7f020006;
         public static final int safe=0x7f020007;
         public static final int settings=0x7f020008;
-        public static final int sysoptimize=0x7f020009;
-        public static final int taskmanager=0x7f02000a;
-        public static final int trojan=0x7f02000b;
+        public static final int setup1=0x7f020009;
+        public static final int sysoptimize=0x7f02000a;
+        public static final int taskmanager=0x7f02000b;
+        public static final int trojan=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000b;
-        public static final int cb_status=0x7f08000a;
-        public static final int iv_item=0x7f080006;
+        public static final int action_settings=0x7f08000f;
+        public static final int cancle=0x7f080008;
+        public static final int cb_status=0x7f08000e;
+        public static final int et_setup_confirm=0x7f080009;
+        public static final int et_setup_pwd=0x7f080006;
+        public static final int iv_item=0x7f08000a;
         public static final int list_home=0x7f080001;
+        public static final int ok=0x7f080007;
         public static final int rl_root_splash=0x7f080003;
         public static final int siv_update=0x7f080002;
         public static final int textView1=0x7f080000;
-        public static final int tv_desc=0x7f080009;
-        public static final int tv_item=0x7f080007;
+        public static final int tv_desc=0x7f08000d;
+        public static final int tv_item=0x7f08000b;
         public static final int tv_splash_version=0x7f080004;
-        public static final int tv_title=0x7f080008;
+        public static final int tv_title=0x7f08000c;
         public static final int tv_update_info=0x7f080005;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
-        public static final int activity_setting=0x7f030001;
-        public static final int activity_splash=0x7f030002;
-        public static final int list_item_home=0x7f030003;
-        public static final int setting_item_view=0x7f030004;
+        public static final int activity_lost_find=0x7f030001;
+        public static final int activity_setting=0x7f030002;
+        public static final int activity_setup1=0x7f030003;
+        public static final int activity_splash=0x7f030004;
+        public static final int dialog_enter_password=0x7f030005;
+        public static final int dialog_setup_password=0x7f030006;
+        public static final int list_item_home=0x7f030007;
+        public static final int setting_item_view=0x7f030008;
     }
     public static final class menu {
         public static final int splash=0x7f070000;
@@ -114,6 +123,7 @@ containing a value of this type.
         /**  Application theme. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int text_content_style=0x7f060002;
     }
     public static final class styleable {
         /** Attributes that can be used with a TextView.

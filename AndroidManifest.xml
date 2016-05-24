@@ -24,8 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.wailaixing.mobilesafe.HomeActivity" />
-        <activity android:name="com.wailaixing.mobilesafe.SettingActivity" />
+        <activity android:name="com.wailaixing.mobilesafe.HomeActivity" ></activity>
+        <activity android:name="com.wailaixing.mobilesafe.SettingActivity" > </activity>
+        <activity android:name="com.wailaixing.mobilesafe.LostFindActivity" > </activity>
+        <activity android:name="com.wailaixing.mobilesafe.setup1Activity" >  </activity> 
     </application>
 
 </manifest>
