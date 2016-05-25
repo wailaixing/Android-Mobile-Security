@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.view.View.OnClickListener;
 
 public class LostFindActivity extends Activity {
@@ -28,6 +29,13 @@ public class LostFindActivity extends Activity {
 			finish();
 		}
 		
+	}
+	//重新进入手机防盗页面
+	public void reEnterSetup(View View){
+		Intent intent=new Intent(this,setup1Activity.class);
+		startActivity(intent);
+		finish();
+	
 	}
 	
 	

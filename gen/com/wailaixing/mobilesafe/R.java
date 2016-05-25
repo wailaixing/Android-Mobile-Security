@@ -47,17 +47,30 @@ containing a value of this type.
     public static final class drawable {
         public static final int app=0x7f020000;
         public static final int atools=0x7f020001;
-        public static final int callmsgsafe=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int lunch_bg1=0x7f020004;
-        public static final int luncher_bg=0x7f020005;
-        public static final int netmanager=0x7f020006;
-        public static final int safe=0x7f020007;
-        public static final int settings=0x7f020008;
-        public static final int setup1=0x7f020009;
-        public static final int sysoptimize=0x7f02000a;
-        public static final int taskmanager=0x7f02000b;
-        public static final int trojan=0x7f02000c;
+        public static final int bind=0x7f020002;
+        public static final int btn_green_normal=0x7f020003;
+        public static final int btn_green_pressed=0x7f020004;
+        public static final int button=0x7f020005;
+        public static final int button_bg=0x7f020006;
+        public static final int button_normal=0x7f020007;
+        public static final int button_pressed=0x7f020008;
+        public static final int callmsgsafe=0x7f020009;
+        public static final int gradient_box=0x7f02000a;
+        public static final int gradient_box_pressed=0x7f02000b;
+        public static final int ic_launcher=0x7f02000c;
+        public static final int lock=0x7f02000d;
+        public static final int lunch_bg1=0x7f02000e;
+        public static final int luncher_bg=0x7f02000f;
+        public static final int netmanager=0x7f020010;
+        public static final int phone=0x7f020011;
+        public static final int safe=0x7f020012;
+        public static final int settings=0x7f020013;
+        public static final int setup1=0x7f020014;
+        public static final int shape_selector=0x7f020015;
+        public static final int sysoptimize=0x7f020016;
+        public static final int taskmanager=0x7f020017;
+        public static final int trojan=0x7f020018;
+        public static final int unlock=0x7f020019;
     }
     public static final class id {
         public static final int action_settings=0x7f08000f;
@@ -82,11 +95,14 @@ containing a value of this type.
         public static final int activity_lost_find=0x7f030001;
         public static final int activity_setting=0x7f030002;
         public static final int activity_setup1=0x7f030003;
-        public static final int activity_splash=0x7f030004;
-        public static final int dialog_enter_password=0x7f030005;
-        public static final int dialog_setup_password=0x7f030006;
-        public static final int list_item_home=0x7f030007;
-        public static final int setting_item_view=0x7f030008;
+        public static final int activity_setup2=0x7f030004;
+        public static final int activity_setup3=0x7f030005;
+        public static final int activity_setup4=0x7f030006;
+        public static final int activity_splash=0x7f030007;
+        public static final int dialog_enter_password=0x7f030008;
+        public static final int dialog_setup_password=0x7f030009;
+        public static final int list_item_home=0x7f03000a;
+        public static final int setting_item_view=0x7f03000b;
     }
     public static final class menu {
         public static final int splash=0x7f070000;
@@ -123,6 +139,8 @@ containing a value of this type.
         /**  Application theme. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int button_next_style=0x7f060003;
+        public static final int button_pre_style=0x7f060004;
         public static final int text_content_style=0x7f060002;
     }
     public static final class styleable {

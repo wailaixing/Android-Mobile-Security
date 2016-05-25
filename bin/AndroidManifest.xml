@@ -27,7 +27,10 @@
         <activity android:name="com.wailaixing.mobilesafe.HomeActivity" ></activity>
         <activity android:name="com.wailaixing.mobilesafe.SettingActivity" > </activity>
         <activity android:name="com.wailaixing.mobilesafe.LostFindActivity" > </activity>
-        <activity android:name="com.wailaixing.mobilesafe.setup1Activity" >  </activity> 
+        <activity android:name="com.wailaixing.mobilesafe.setup1Activity" >  </activity>
+        <activity android:name="com.wailaixing.mobilesafe.setup2Activity" >  </activity> 
+        <activity android:name="com.wailaixing.mobilesafe.setup3Activity" >  </activity> 
+        <activity android:name="com.wailaixing.mobilesafe.setup4Activity" >  </activity>                                  
     </application>
 
 </manifest>
