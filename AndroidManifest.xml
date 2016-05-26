@@ -7,9 +7,22 @@
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="18" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -25,12 +38,19 @@
             </intent-filter>
         </activity>
         <activity android:name="com.wailaixing.mobilesafe.HomeActivity" ></activity>
-        <activity android:name="com.wailaixing.mobilesafe.SettingActivity" > </activity>
-        <activity android:name="com.wailaixing.mobilesafe.LostFindActivity" > </activity>
-        <activity android:name="com.wailaixing.mobilesafe.setup1Activity" >  </activity>
-        <activity android:name="com.wailaixing.mobilesafe.setup2Activity" >  </activity> 
-        <activity android:name="com.wailaixing.mobilesafe.setup3Activity" >  </activity> 
-        <activity android:name="com.wailaixing.mobilesafe.setup4Activity" >  </activity>                                  
+        <activity android:name="com.wailaixing.mobilesafe.SettingActivity" />
+        <activity android:name="com.wailaixing.mobilesafe.LostFindActivity" />
+        <activity android:name="com.wailaixing.mobilesafe.setup1Activity" />
+        <activity android:name="com.wailaixing.mobilesafe.setup2Activity" />
+        <activity android:name="com.wailaixing.mobilesafe.setup3Activity" />
+        <activity android:name="com.wailaixing.mobilesafe.setup4Activity" />
+		<activity android:name="com.wailaixing.mobilesafe.SelectContactActivity" />
+		    
+        <receiver android:name="com.wailaixing.mobilesafe.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

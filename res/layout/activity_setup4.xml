@@ -55,11 +55,11 @@
     		android:layout_height="wrap_content"  />
         
         <Button
-         	style="@style/button_next_style" />
+         	style="@style/button_next_style" 
+         	android:text="设置完成 " />
 
         <Button
          	style="@style/button_pre_style"
-         	android:text="设置完成"
          	 />
          
     </RelativeLayout>

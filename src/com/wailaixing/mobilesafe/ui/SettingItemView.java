@@ -50,24 +50,32 @@ public class SettingItemView extends RelativeLayout {
 		super(context);
 		iniView(context);
 	}
+
+	/**
+	 * 校验组合控件是否选中
+	 */
 	
-	//校验组合控件是否选中
 	public boolean isCheck(){
 		return cb_status.isChecked();
 	}
 	
-	//设置组合控件状态
+	/**
+	 * 设置组合控件的状态
+	 */
+	
 	public void setChecked(boolean checked){
 		if(checked){
 			setDesc(desc_on);
 		}else{
 			setDesc(desc_off);
 		}
-		
 		cb_status.setChecked(checked);
 	}
 	
-	//设置组合控件的描述信息
+	/**
+	 * 设置 组合控件的描述信息
+	 */
+	
 	public void setDesc(String text){
 		tv_desc.setText(text);
 	}
