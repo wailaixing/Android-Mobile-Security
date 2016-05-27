@@ -45,12 +45,19 @@
         <activity android:name="com.wailaixing.mobilesafe.setup3Activity" />
         <activity android:name="com.wailaixing.mobilesafe.setup4Activity" />
 		<activity android:name="com.wailaixing.mobilesafe.SelectContactActivity" />
-		    
+		 
         <receiver android:name="com.wailaixing.mobilesafe.BootCompleteReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+        
+        <receiver android:name="com.wailaixing.mobilesafe.receiver.SMSReceiver">
+        	    <intent-filter android:priority="1000">
+            		<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+        	    </intent-filter>
+        </receiver>
+        
     </application>
 
 </manifest>

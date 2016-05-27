@@ -16,6 +16,7 @@
         android:background="#9400d3" />
  
 	<CheckBox
+		android:id="@+id/cb_protect"	    
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:text="你没有开启防盗保护功能" />

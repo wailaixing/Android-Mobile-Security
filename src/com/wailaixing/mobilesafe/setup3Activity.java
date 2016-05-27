@@ -26,17 +26,16 @@ public class setup3Activity extends BaseSetupActivity {
 
 	@Override
 	public void showNext() {
-		//必须保存安全号码
-		String phone=et_setup3_phone.getText().toString().trim();
+		String phone = et_setup3_phone.getText().toString().trim();
 		if(TextUtils.isEmpty(phone)){
-			Toast.makeText(this, "安全号码未设置", 1).show();
-			return ;
+			Toast.makeText(this, "安全号码还没有设置", 0).show();
+			return;
 		}
 		
-		Editor editor=sp.edit();
+		//应该保存一些 安全号码
+		Editor editor = sp.edit();
 		editor.putString("safenumber", phone);
 		editor.commit();
-		
 		
 		Intent intent = new Intent(this,setup4Activity.class);
 		startActivity(intent);
