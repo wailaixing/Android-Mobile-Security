@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:text="高级功能" 
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="#9400d3" />
+    
+    <TextView
+        android:clickable="true"
+        android:onClick="numberQuery"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="电话号码归属地查询"
+        android:gravity="center_vertical"  />
+    
+
+    
+
+</LinearLayout>
