@@ -59,18 +59,23 @@ public class HomeActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
+				Intent intent;
 				switch (position) {
 				case 8://进入设置中心
-					Intent intent = new Intent(HomeActivity.this,SettingActivity.class);
+					intent = new Intent(HomeActivity.this,SettingActivity.class);
 					startActivity(intent);
 					break;
 				case 0://进入手机防盗页面
 					showLostFindDialog();
 					break;
 				case 7://进入高级工具
-					Intent intent_s=new Intent(HomeActivity.this,AtoolsActivity.class);
-					startActivity(intent_s);
+					intent=new Intent(HomeActivity.this,AtoolsActivity.class);
+					startActivity(intent);
 					break;
+				case 2:
+					intent = new Intent(HomeActivity.this,AppManagerActivity.class);
+					startActivity(intent);
+					break;					
 				default:
 					break;
 				}

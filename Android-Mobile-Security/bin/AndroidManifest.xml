@@ -47,7 +47,7 @@
 		<activity android:name="com.wailaixing.mobilesafe.SelectContactActivity" />
 		<activity android:name="com.wailaixing.mobilesafe.AtoolsActivity" /> 
 		<activity android:name="com.wailaixing.mobilesafe.NumberAddressQueryActivity" />
-		
+		<activity android:name="com.wailaixing.mobilesafe.AppManagerActivity" />
 		
         <receiver android:name="com.wailaixing.mobilesafe.BootCompleteReceiver">
             <intent-filter>
